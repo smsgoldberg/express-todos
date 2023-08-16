@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 //GET /todos
 router.get('/todos', function(req, res, next) {
-  res.render('todos/index.ejs', {todos: allTodos});
+  res.render('todos/index.ejs', {title: "All To-Dos", todos: allTodos});
 });
 
 

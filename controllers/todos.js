@@ -5,9 +5,13 @@ const Todo = require('../models/todo');
 
 module.exports = {
     index,
-    show
+    show, 
+    new: newTodo
   };
 	
+  function newTodo(req, res) {
+    res.render('todos/new', {title: 'New Todo '});
+  }
  
 function index(req, res) {
     res.render('todos/index', {
@@ -23,3 +27,4 @@ function index(req, res) {
       title: 'To-Do Details'
     });
   }
+
