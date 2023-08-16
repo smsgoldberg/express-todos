@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Express To-Do</title>
-</head>
-<body>
-    <h1>All To-Dos</h1>
+<%- include('../partials/header') %>
+
+
+<h3>To-Dos as of <%= time %></h3>
     <ul>
         <% todos.forEach(function(t) { %>
             <li>
@@ -16,5 +11,4 @@
            </li>
       <% }); %>
     </ul> 
-</body>
-</html>
+<%- include('../partials/footer') %>
